@@ -1,0 +1,33 @@
+.green{
+    background-color: #2A9D8F
+}
+.dark-green{
+    background-color: #1B645C
+}
+.light-green{
+    background-color: rgb(90, 138, 132)
+}
+.font-color{
+    color: #192D35
+}
+body{
+    font-family: 'Roboto',
+    sans-serif;
+}
+
+
+
+
+.user-form{
+    margin: 30%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    padding: 2%;
+}
+.user-form-input{
+    font-family: 'Gill Sans';
+    font-size: 16px;
+}
+.user-form-input:active{
+    background-color: #1B645C;
+}
