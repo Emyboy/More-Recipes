@@ -1,0 +1,25 @@
+{
+  "name": "More-Recipes",
+  "version": "1.0.0",
+  "description": "Andela Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emyboy/More-Recipes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Emyboy/More-Recipes/issues"
+  },
+  "homepage": "https://github.com/Emyboy/More-Recipes#readme",
+  "dependencies": {
+    "bootstrap": "^4.2.1",
+    "cors": "^2.8.5",
+    "express": "^4.16.4"
+  }
+}
