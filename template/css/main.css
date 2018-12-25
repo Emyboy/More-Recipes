@@ -24,10 +24,35 @@ body{
     background: #192D35;
     color: white;
 }
+.default-input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #2A9D8F;
+    outline: none;
+}
 
 
 
 
+
+.detils{
+    display: grid;
+}
+.details-card-left{
+    float: left;
+    /* padding: 25%; */
+    margin-top: 5%;
+    width: 60%;
+}
+.details-card-right{
+    float: right;
+    /* padding: 15%; */
+    margin-top: 5%;
+    width: 35%;
+    padding: 1%;
+    
+}
 .home-jumbo{
     background-image: url('https://static01.nyt.com/images/2018/03/01/dining/01COOKING-CHICKEN-CURRY1/01COOKING-CHICKEN-CURRY1-threeByTwoMediumAt2X.jpg');
     height: 100px;
@@ -38,6 +63,13 @@ body{
 }
 .recipe-card{
     margin: 1%;
+}
+.review-card{
+    padding: 1%;
+}
+.review-avatar{
+    border-radius: 100%;
+    /* width: 20%; */
 }
 .user-form{
     margin: 30%;
@@ -54,4 +86,9 @@ body{
 }
 .user-form-input:active{
     background-color: #1B645C;
+}
+.vote-btn{
+    width: 5%;
+    height: 5%;
+    cursor: pointer;
 }
