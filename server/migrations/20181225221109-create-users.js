@@ -1,21 +1,29 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable indent */
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.createTable('Recipes', {
+    return queryInterface.createTable('Users', {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      ingredient: {
+      username: {
         type: Sequelize.STRING
       },
-      about: {
+      email: {
         type: Sequelize.STRING
       },
-      imageurl : {
-        type : Sequelize.STRING,
+      phoneno: {
+        type: Sequelize.STRING
+      },
+      password: {
+        type: Sequelize.STRING
+      },
+      avatarurl:{
+        type : Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -28,6 +36,6 @@ module.exports = {
     });
   },
   down: (queryInterface, Sequelize) => {
-    return queryInterface.dropTable('Recipes');
+    return queryInterface.dropTable('Users');
   }
 };
