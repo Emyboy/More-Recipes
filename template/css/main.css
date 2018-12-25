@@ -14,6 +14,16 @@ body{
     font-family: 'Roboto',
     sans-serif;
 }
+.default-btn{
+    padding: 4%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.default-btn:hover{
+    background: #192D35;
+    color: white;
+}
 
 
 
@@ -25,6 +35,9 @@ body{
     color: aliceblue;
     text-align: center;
     background-repeat: no-repeat;
+}
+.recipe-card{
+    margin: 1%;
 }
 .user-form{
     margin: 30%;
