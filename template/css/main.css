@@ -15,7 +15,7 @@ body{
     sans-serif;
 }
 .default-btn{
-    padding: 4%;
+    padding: 1%;
     border: none;
     cursor: pointer;
     border-radius: 5px;
@@ -60,6 +60,14 @@ body{
     color: aliceblue;
     text-align: center;
     background-repeat: no-repeat;
+}
+.profile-jumbo{
+    text-align: center;
+    background-image: url('https://www.foodbank.org.au/wp-content/uploads/2012/06/BG_fruit.jpg');
+    color: aliceblue;
+}
+.profile-avatar{
+    border-radius: 100%;
 }
 .recipe-card{
     margin: 1%;
