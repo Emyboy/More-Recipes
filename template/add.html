@@ -52,25 +52,25 @@
             </div>
         </nav>
 
-        <div class="center jumbotron home-jumbo shadow">
-            <h3>Welcome To</h3>
-            <h1 style="font-size: 400%">More Recipes</h1>
-        </div>
-
         <div class="home-body container">
             <div class="section">
-                <div style='text-align: center'>
-                    <legend>Most Popular Recipes</legend>
-                </div>
-                <div class="row mb-5 mt-5">
-                    <div class="card m5 recipe-card shadow" style="width: 18rem;">
-                        <img class="card-img-top" src="./img/demo/listing/2.jpg" alt="Card image cap">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <button onclick="window.location = './details.html'" href="#" class="btn green font-color">View</button>
+                <div class="container">
+                    <form method="POST" class="green user-form shadow">
+                        <span class="h3 mb-3 font-weight-normal"><h1>Add Recipe</h1></span>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Ingredient</label>
+                            <input type="text" class="form-control user-form-input" id="exampleInputEmail1z" aria-describedby="emailHelp" placeholder="Ingredient">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">About Recipe</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Upload Image</label>
+                            <input type="file"/>
+                        </div>
+                        <button style='color:aliceblue' type="submit" class="btn dark-green">Add</button>
+                    </form>
                 </div>
             </div>
         </div>
