@@ -23,7 +23,7 @@
                         <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
+                        <a class="nav-link" href="./add.html">Add Recipe</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./signin.html">Signin</a>
@@ -52,7 +52,28 @@
             </div>
         </nav>
 
-
+        <div class="home-body container">
+            <div class="section">
+                <div class="container">
+                    <form method="POST" class="green user-form shadow">
+                        <span class="h3 mb-3 font-weight-normal"><h1>Edit Recipe</h1></span>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Ingredient</label>
+                            <input type="text" class="form-control user-form-input" id="exampleInputEmail1z" aria-describedby="emailHelp" placeholder="Ingredient">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">About Recipe</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Upload Image</label>
+                            <input type="file"/>
+                        </div>
+                        <button style='color:aliceblue' type="submit" class="btn dark-green">Add</button>
+                    </form>
+                </div>
+            </div>
+        </div>
 
 </body>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
