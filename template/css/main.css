@@ -18,11 +18,22 @@ body{
 
 
 
+.home-jumbo{
+    background-image: url('https://static01.nyt.com/images/2018/03/01/dining/01COOKING-CHICKEN-CURRY1/01COOKING-CHICKEN-CURRY1-threeByTwoMediumAt2X.jpg');
+    height: 100px;
+    padding: 15%;
+    color: aliceblue;
+    text-align: center;
+    background-repeat: no-repeat;
+}
 .user-form{
     margin: 30%;
     margin-top: 10%;
     margin-bottom: 1%;
-    padding: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
 }
 .user-form-input{
     font-family: 'Gill Sans';
