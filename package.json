@@ -4,7 +4,7 @@
   "description": "Andela Project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha ./server/tests/*.js --timeout 10000",
     "start": "nodemon server/src/index.js --exec babel-node",
     "migrate": "sequelize db:migrate",
     "undo": "sequelize db:migrate:undo"
