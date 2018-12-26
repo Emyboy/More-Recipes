@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(morgan('dev'));
 
-app.use('/api/v1',rootRoute);
+app.use('/api/',rootRoute);
 
 app.listen(port,()=>{
 	console.log(`server is running on port ${port}`);

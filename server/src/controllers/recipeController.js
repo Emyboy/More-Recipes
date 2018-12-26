@@ -20,5 +20,24 @@ export default class RecipeController {
         .catch(err=>{
             res.send(err);
         });
-	}
+    }
+    
+    static updateRecipe(req,res){
+        Recipe.update({
+            ingredient : req.body.ingredient
+        },{
+            where : {id:req.params.recipeid}
+        }).then(update=>res.send(update))
+        .catch(err=>res.send(err));
+    }
+
+    static deleteRecipe(req,res){
+        Recipe.destroy({
+            where : {
+                id : req.params.recipeid
+            }
+        })
+        .then(()=>res.send({message:`Recipe ${req.params.recipeid} was deleted`}))
+        .catch(err=>res.send(err));
+    }
 }
