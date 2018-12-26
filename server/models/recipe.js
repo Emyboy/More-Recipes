@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Recipe = sequelize.define('Recipe', {
@@ -5,6 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     imageurl: {
       type: DataTypes.STRING,
     },
+
     about: DataTypes.STRING
   }, {});
   Recipe.associate = function(models) {

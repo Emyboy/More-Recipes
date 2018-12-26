@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {
@@ -7,6 +8,9 @@ module.exports = {
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER
+      },
+      userid : {
+        type : Sequelize.INTEGER
       },
       ingredient: {
         type: Sequelize.STRING
