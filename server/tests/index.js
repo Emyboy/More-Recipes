@@ -18,8 +18,8 @@ describe('testing recipe features',()=>{
 		};
 		chai.request(app).post('/api/v1/recipe')
 			.send(newRecipe).end((error,response)=>{
-				// response.should.have.status(200);
-				// response.body.should.be.a('object');
+				response.should.have.status(200);
+				response.body.should.be.a('object');
 			});
 		done();
 	});
