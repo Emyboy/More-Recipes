@@ -1,13 +1,14 @@
 import express from 'express';
 const recipeRoute = express.Router();
 import RecipeController from '../controllers/recipeController';
-const {  postRecipe,updateRecipe,deleteRecipe  } = RecipeController;
+const {  postRecipe,updateRecipe,deleteRecipe,getAllRecipe,addRecipeReview  } = RecipeController;
 
 
-recipeRoute.post('/recipe',postRecipe);
-recipeRoute.put('/recipe/:recipeid',updateRecipe);
-recipeRoute.delete('/recipe/:recipeid',deleteRecipe);
-
+recipeRoute.post('/recipes',postRecipe);
+recipeRoute.put('/recipes/:recipeid',updateRecipe);
+recipeRoute.delete('/recipes/:recipeid',deleteRecipe);
+recipeRoute.get('/recipes',getAllRecipe);
+recipeRoute.post('/recipes/:recipeid/reviews',addRecipeReview);
 
 
 export default recipeRoute;

@@ -6,6 +6,7 @@ import morgan from 'morgan';
 const port = process.env.PORT || 5000;
 const app = express();
 import rootRoute from './routes/rootRoute';
+import db from '../models';
 
 
 //  USE
@@ -16,8 +17,12 @@ app.use(morgan('dev'));
 
 app.use('/api/',rootRoute);
 
-app.listen(port,()=>{
-	console.log(`server is running on port ${port}`);
+
+
+db.sequelize.sync().then(()=>{
+	app.listen(port,()=>{
+		console.log(`server is running on port ${port}`);
+	});
 });
 
 

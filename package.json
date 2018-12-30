@@ -4,10 +4,11 @@
   "description": "Andela Project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --compilers js:babel-core/register server/tests",
-    "start": "nodemon server/src/index.js --exec babel-node",
+    "test": "mocha --compilers js:babel-core/register server/tests/**/*.js",
     "migrate": "sequelize db:migrate",
-    "undo": "sequelize db:migrate:undo"
+    "undo": "sequelize db:migrate:undo",
+    "start": "nodemon server/src/index.js --exec babel-node",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -25,10 +26,13 @@
     "bootstrap": "^4.2.1",
     "chai": "^4.2.0",
     "chai-http": "^4.2.0",
+    "concurrently": "^4.1.0",
     "cors": "^2.8.5",
+    "coveralls": "^3.0.2",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
     "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
     "pg": "^7.7.1",
     "sequelize": "^4.42.0"
   },

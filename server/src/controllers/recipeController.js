@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 'use strict';
 import { Recipe } from '../../models';
+import { Review } from '../../models';
 
 
 /**
@@ -38,6 +39,18 @@ export default class RecipeController {
             }
         })
         .then(()=>res.send({message:`Recipe ${req.params.recipeid} was deleted`}))
+        .catch(err=>res.send(err));
+    }
+
+    static getAllRecipe(req,res){
+        Recipe.findAll()
+        .then(recipe=>res.send(recipe))
+        .catch(err=>res.send(err));
+    }
+
+    static addRecipeReview(req,res){
+        Review.create(req.body)
+        .then(review=>res.send(review))
         .catch(err=>res.send(err));
     }
 }
