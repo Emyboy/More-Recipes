@@ -24,3 +24,4 @@ branches:
   only:
   - develop
   - master
+services: postgres
