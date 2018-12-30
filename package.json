@@ -8,7 +8,7 @@
     "migrate": "sequelize db:migrate",
     "undo": "sequelize db:migrate:undo",
     "start": "nodemon server/src/index.js --exec babel-node",
-    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
+    "coveralls": "npm run db:initialize --exit && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text --require babel-register --require babel-polyfill mocha server/tests/**/*.js --exit "
   },
   "repository": {
     "type": "git",
