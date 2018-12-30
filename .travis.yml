@@ -19,3 +19,8 @@ script:
 cache:
   directories:
     - node_modules
+
+branches:
+  only:
+  - develop
+  - master
