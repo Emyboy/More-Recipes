@@ -12,7 +12,8 @@ module.exports = {
 	},
 	test: {
 		use_env_variable: 'DB_TEST_URL',
-		dialect: 'postgres'
+		dialect: 'postgres',
+		database : process.env.DATABASE_DB_NAME
 	},
 	testdev: {
 		username: process.env.USERNAME_DB_TEST,
