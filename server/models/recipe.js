@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   const Recipe = sequelize.define('Recipe', {
@@ -9,6 +10,12 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Recipe.associate = function(models) {
     // associations can be defined here
+    Recipe.belongsTo(models.Users,{
+      foreignkey : 'recipeid'
+    });
+    // Recipe.hasMany(models.Reviews,{
+    //   foreignkey : 'reviewid'
+    // });
   };
   return Recipe;
 };

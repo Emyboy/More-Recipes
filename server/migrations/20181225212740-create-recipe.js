@@ -1,3 +1,4 @@
+/* eslint-disable indent */
 'use strict';
 module.exports = {
   up: (queryInterface, Sequelize) => {

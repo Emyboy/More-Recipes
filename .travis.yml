@@ -1,0 +1,31 @@
+language: node_js
+node_js:
+- "stable"
+notifications:
+  email: false
+before_script:
+  - npm install
+  - npm i nyc --save-dev
+  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
+  - chmod +x ./cc-test-reporter
+  - ./cc-test-reporter before-build
+script:
+  - npm run test
+# after_success:
+#   - npm run coverage
+#   - npm run coveralls
+#   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
+
+cache:
+  directories:
+    - node_modules
+
+branches:
+  only:
+  - develop
+  - master
+services:
+  - postgres
+  - mysql
+addons:
+  postgresql: "9.4" 

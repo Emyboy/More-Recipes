@@ -4,10 +4,11 @@
   "description": "Andela Project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server/src/index.js --exec babel-node",
+    "test": "mocha --compilers js:babel-core/register server/tests/**/*.js",
     "migrate": "sequelize db:migrate",
-    "undo": "sequelize db:migrate:undo"
+    "undo": "sequelize db:migrate:undo",
+    "start": "nodemon server/src/index.js --exec babel-node",
+    "coveralls": "npm run db:initialize --exit && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text --require babel-register --require babel-polyfill mocha server/tests/**/*.js --exit "
   },
   "repository": {
     "type": "git",
@@ -24,14 +25,20 @@
     "body-parser": "^1.18.3",
     "bootstrap": "^4.2.1",
     "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "concurrently": "^4.1.0",
     "cors": "^2.8.5",
+    "coveralls": "^3.0.2",
     "dotenv": "^6.2.0",
     "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0",
     "pg": "^7.7.1",
     "sequelize": "^4.42.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "eslint": "^5.11.0",
     "eslint-config-google": "^0.11.0",
