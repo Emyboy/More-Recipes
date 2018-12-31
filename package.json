@@ -30,6 +30,7 @@
     "cors": "^2.8.5",
     "coveralls": "^3.0.2",
     "dotenv": "^6.2.0",
+    "eslint-config-airbnb": "^17.1.0",
     "express": "^4.16.4",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
