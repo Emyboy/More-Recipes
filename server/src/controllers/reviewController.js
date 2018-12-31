@@ -7,6 +7,6 @@
 export default class ReviewController {
 
 	static addReview(req,res){
-		res.send('Review added');
+		res.send(`review added => ${req.body.review}`);
 	}
 }
