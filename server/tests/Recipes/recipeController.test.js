@@ -8,7 +8,7 @@ import app from '../../src';
 
 
 
-describe('testing recipe controllers',()=>{
+describe('tests for all recipe controllers',()=>{
 	it('should post a new recipe each time',(done)=>{
 		const newRecipe = {
 			// UserId : 1,
