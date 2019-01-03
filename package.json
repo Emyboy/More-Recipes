@@ -7,7 +7,7 @@
     "test": "mocha --compilers js:babel-core/register server/tests/**/*.js",
     "migrate": "sequelize db:migrate",
     "undo": "sequelize db:migrate:undo",
-    "start": "nodemon server/src/index.js --exec babel-node",
+    "start": "nodemon server/src/index.js client/public/js --exec babel-node",
     "coveralls": "npm run db:initialize --exit && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text --require babel-register --require babel-polyfill mocha server/tests/**/*.js --exit "
   },
   "repository": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Emyboy/More-Recipes.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ifeora Chukwuemeka Stanley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Emyboy/More-Recipes/issues"

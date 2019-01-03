@@ -15,13 +15,13 @@ app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:false}));
 app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname,'..','/template')));
-app.use(express.static(path.join(__dirname,'..','/template/css')));
+app.use(express.static(path.join(__dirname, '.', '../../client/public')));
 
 app.use('/api/',rootRoute);
 
-app.get('/',(req,res)=>{
-	res.sendfile(path.join(__dirname,'../../', '/template/index.html'));
+
+app.get('/', (req, res) => {
+	res.sendfile(path.join(__dirname, '/', '../../client/public/index.html'));
 });
 
 
