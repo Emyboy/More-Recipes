@@ -12,7 +12,7 @@
 <body>
     <!-- NAV BAR -->
         <nav class="navbar navbar-expand-lg navbar-light green">
-            <a class="navbar-brand" href="#">More Recipes</a>
+            <a class="navbar-brand" href="/">More Recipes</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03"
                 aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -21,16 +21,16 @@
             <div class="collapse navbar-collapse" id="navbarColor03">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./add.html">Add Recipe</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./signin.html">Signin</a>
+                        <a class="nav-link" href="/login">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./signup.html">Signup</a>
+                        <a class="nav-link" href="signup">Signup</a>
                     </li>
                 </ul>
                 <form class="form-inline">
@@ -53,19 +53,15 @@
             </div>
         </nav>
 
-        <div class='root'>
-            <!-- this is where all the pages are displayed  -->
+        <div id='root'>
+            <!-- this is where all the pages are rendered  -->
         </div>
-
-        
-
-        
-
 </body>
 
-    <script type="text/javascript" src="./js/Router.js"></script>
-    <script type="module" src="./js/pages/Home.js"></script>
     <script type="module" src="./js/pages/Render.js"></script>
+    <script type="module" src="./js/Router.js"></script>
+    <script type="module" src="./js/pages/Home.js"></script>
+    <script type="module" src="./js/viewControllers/eventListiners.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

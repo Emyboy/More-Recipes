@@ -4,9 +4,12 @@
  */
 const root = document.getElementById('root');
 
-export default class Render {
+export default class RenderDom {
 
-	static renderHome (element){
+	static Render (element){
 		root.innerHTML = element;
+	}
+	static Clear (){
+		root.innerHTML = '<div></div>';
 	}
 }

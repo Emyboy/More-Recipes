@@ -9,7 +9,6 @@ import rootRoute from './routes/rootRoute';
 import db from '../models';
 import path from 'path';
 
-
 //  USE
 app.use(cors());
 app.use(bodyParser.json());
@@ -18,12 +17,12 @@ app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, '.', '../../client/public')));
 
 app.use('/api/',rootRoute);
+// app.use('/',clientRoute);
 
 
-app.get('/', (req, res) => {
+app.get('*', (req, res) => {
 	res.sendfile(path.join(__dirname, '/', '../../client/public/index.html'));
 });
-
 
 
 db.sequelize.sync().then(()=>{
