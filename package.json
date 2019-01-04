@@ -7,7 +7,7 @@
     "test": "mocha --compilers js:babel-core/register server/tests/**/*.js",
     "migrate": "sequelize db:migrate",
     "undo": "sequelize db:migrate:undo",
-    "start": "nodemon server/src/index.js --exec babel-node",
+    "start": "nodemon server/src/index.js client/public/js --exec babel-node",
     "coveralls": "npm run db:initialize --exit && cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text --require babel-register --require babel-polyfill mocha server/tests/**/*.js --exit "
   },
   "repository": {
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/Emyboy/More-Recipes.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ifeora Chukwuemeka Stanley",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Emyboy/More-Recipes/issues"
@@ -29,13 +29,16 @@
     "concurrently": "^4.1.0",
     "cors": "^2.8.5",
     "coveralls": "^3.0.2",
+    "cross-env": "^5.2.0",
     "dotenv": "^6.2.0",
     "eslint-config-airbnb": "^17.1.0",
     "express": "^4.16.4",
+    "jsonwebtoken": "^8.4.0",
     "mocha": "^5.2.0",
     "nyc": "^13.1.0",
     "pg": "^7.7.1",
-    "sequelize": "^4.42.0"
+    "sequelize": "^4.42.0",
+    "serve-favicon": "^2.5.0"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

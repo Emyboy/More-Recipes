@@ -1,0 +1,102 @@
+.green{
+    background-color: #2A9D8F
+}
+.dark-green{
+    background-color: #1B645C
+}
+.light-green{
+    background-color: rgb(90, 138, 132)
+}
+.font-color{
+    color: #192D35
+}
+body{
+    font-family: 'Roboto',
+    sans-serif;
+}
+.default-btn{
+    padding: 2%;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.default-btn:hover{
+    background: #192D35;
+    color: white;
+}
+.default-input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom-color: #2A9D8F;
+    outline: none;
+}
+
+
+
+
+
+.detils{
+    display: grid;
+}
+.details-card-left{
+    float: left;
+    /* padding: 25%; */
+    margin-top: 5%;
+    width: 60%;
+}
+.details-card-right{
+    float: right;
+    /* padding: 15%; */
+    margin-top: 5%;
+    width: 35%;
+    padding: 1%;
+    
+}
+.home-jumbo{
+    background-image: url('https://static01.nyt.com/images/2018/03/01/dining/01COOKING-CHICKEN-CURRY1/01COOKING-CHICKEN-CURRY1-threeByTwoMediumAt2X.jpg');
+    height: 100px;
+    padding: 15%;
+    color: aliceblue;
+    text-align: center;
+    background-repeat: no-repeat;
+}
+.profile-jumbo{
+    text-align: center;
+    background-image: url('https://www.foodbank.org.au/wp-content/uploads/2012/06/BG_fruit.jpg');
+    color: aliceblue;
+}
+.profile-avatar{
+    border-radius: 100%;
+}
+.recipe-card{
+    margin: 1%;
+}
+.review-card{
+    padding: 1%;
+}
+.review-avatar{
+    border-radius: 100%;
+    /* width: 20%; */
+}
+.user-form{
+    margin: 30%;
+    margin-top: 10%;
+    margin-bottom: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.user-form-input{
+    font-family: 'Gill Sans';
+    font-size: 16px;
+}
+.user-form-input:active{
+    background-color: #1B645C;
+}
+.vote-btn{
+    width: 5%;
+    height: 5%;
+    cursor: pointer;
+}
