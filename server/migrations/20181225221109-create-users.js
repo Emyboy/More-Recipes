@@ -11,19 +11,32 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       username: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true
       },
       email: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false,
+        unique: true,
+        validate: {
+          isEmail: true
+        }
       },
       phoneno: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING,
+        allowNull: false
       },
       password: {
-        type: Sequelize.STRING
+        allowNull: false,
+        type: Sequelize.STRING(20)
       },
-      avatarurl:{
-        type : Sequelize.STRING
+      avatarurl: {
+        type: Sequelize.STRING,
+        allowNull: false,
+        validate: {
+          isUrl: true
+        }
       },
       createdAt: {
         allowNull: false,
