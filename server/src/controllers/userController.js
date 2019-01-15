@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 
 /**
  * @description - This classs hendles all the user's auth
+ * @class - UserController
  */
 
 export default class UserController{

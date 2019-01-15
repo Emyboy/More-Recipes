@@ -7,31 +7,30 @@ import profile from './pages/profile.js';
 import addRecipe from './pages/addRecipe.js';
 import edit from './pages/crud.js';
 import details from './pages/details.js';
-const { Render  } = RenderDom;
-
+const { Render } = RenderDom;
 
 
 (()=>{
-	switch(window.location.pathname){
-	case '/':
+	switch(window.location.hash){
+	case '':
 		Render(home);
 		break;
-	case '/login':
+	case '#login':
 		Render(login);
 		break;
-	case '/signup':
+	case '#signup':
 		Render(signup);
 		break;
-	case '/profile':
+	case '#profile':
 		Render(profile);
 		break;
-	case '/add':
+	case '#recipe':
 		Render(addRecipe);
 		break;
-	case '/edit':
+	case '#edit':
 		Render(edit);
 		break;
-	case '/details':
+	case '#recipe/details':
 		Render(details);
 		break;
 	default : Render(notFound);
