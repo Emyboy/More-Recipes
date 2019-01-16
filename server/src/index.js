@@ -3,12 +3,12 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import morgan from 'morgan';
-const port = process.env.PORT || 5000;
-const app = express();
 import rootRoute from './routes/rootRoute';
 import db from '../models';
 import path from 'path';
 import favicon from 'serve-favicon';
+const port = process.env.PORT || 5000;
+const app = express();
 
 //  USE
 app.use(cors());

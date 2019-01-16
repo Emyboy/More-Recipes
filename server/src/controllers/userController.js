@@ -4,6 +4,7 @@ import jwt from 'jsonwebtoken';
 
 /**
  * @description - This classs hendles all the user's auth
+ * @class - UserController
  */
 
 export default class UserController{
@@ -30,8 +31,6 @@ export default class UserController{
 				});
 			});
 	}
-    
-
 	/**
      * @description - This methods logs in a user
      * @param {object} req
@@ -61,13 +60,11 @@ export default class UserController{
 				});
 			});
 	}
-
 	/**
      * @description - The method gets all the users
      * @param {object} req 
      * @param {object} res 
      */
-    
 	static getAllUsers(req,res){
 		Users.findAll()
 			.then(users=>{
@@ -78,6 +75,11 @@ export default class UserController{
 			});
 	}
 
+	/**
+	 * @description - This method gets one user by id
+	 * @param req
+	 * @param res
+	 */
 	static getUserById(req,res){
 		Users.findOne({
 			where : {
